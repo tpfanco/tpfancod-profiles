@@ -4,15 +4,13 @@ all:
 
 clean:
 
-install: all	
-	install -d $(DESTDIR)/usr/share/tpfand/models
-	install -d $(DESTDIR)/usr/share/tpfand/models/by-id
-	install -m 644 models/by-id/* $(DESTDIR)/usr/share/tpfand/models/by-id
-	install -d $(DESTDIR)/usr/share/tpfand/models/by-name	
-	echo Installation complete.	
+install: all
+	install -d $(DESTDIR)/usr/share/tpfancod-profiles
+	install -m 644 usr/share/tpfancod-profiles/* $(DESTDIR)/usr/share/tpfancod-profiles
+	echo Installation complete.
 
 uninstall:
-	rm -rf $(DESTDIR)/usr/share/tpfand/models
+	rm -rf $(DESTDIR)/usr/share/tpfancod-profiles
 
 
 

@@ -1,0 +1,35 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# Short description of the purpose of this profile.
+comment = based on ibm_23736go/matthias@reuter.ws (submitted by tsa@gmx.li)
+# System manufacturer
+product_vendor = IBM
+# ThinkPad Model
+product_name = ThinkPad ???
+# Machine type
+product_id = 23735G1
+
+[Options]
+# Set the hysteresis temperature difference.
+hysteresis = 1
+
+[Sensors]
+ibm_thermal_sensor_0 = {'name': 'CPU', 'triggers': {0: 0, 56: 4, 50: 2, 68: 8, 62: 6}}
+ibm_thermal_sensor_1 = {'name': 'Sysboard', 'triggers': {0: 0, 65: 7, 68: 255, 50: 2, 53: 3, 56: 4, 59: 5, 62: 6}}
+ibm_thermal_sensor_2 = {'name': 'Sensor 2', 'triggers': {0: 0, 38: 255}}
+ibm_thermal_sensor_3 = {'name': 'GPU', 'triggers': {0: 0, 65: 255, 50: 2, 60: 6, 55: 4}}
+ibm_thermal_sensor_4 = {'name': 'Battery', 'triggers': {0: 0, 40: 2, 45: 255}}
+ibm_thermal_sensor_5 = {'name': 'Sensor 5', 'triggers': {0: 0, 40: 255, 35: 5}}
+ibm_thermal_sensor_6 = {'name': 'Battery', 'triggers': {0: 0, 40: 255, 35: 2}}
+ibm_thermal_sensor_7 = {'name': 'Sensor 7', 'triggers': {0: 0, 40: 255, 35: 5}}
+ibm_thermal_sensor_8 = {'name': 'Sensor 8', 'triggers': {0: 255}}
+ibm_thermal_sensor_9 = {'name': 'Sensor 9', 'triggers': {0: 255}}
+ibm_thermal_sensor_10 = {'name': 'Sensor 10', 'triggers': {0: 255}}
+ibm_thermal_sensor_11 = {'name': 'Sensor 11', 'triggers': {0: 255}}
+ibm_thermal_sensor_12 = {'name': 'Sensor 12', 'triggers': {0: 255}}
+ibm_thermal_sensor_13 = {'name': 'Sensor 13', 'triggers': {0: 255}}
+ibm_thermal_sensor_14 = {'name': 'Sensor 14', 'triggers': {0: 255}}
+ibm_thermal_sensor_15 = {'name': 'Sensor 15', 'triggers': {0: 255}}
+

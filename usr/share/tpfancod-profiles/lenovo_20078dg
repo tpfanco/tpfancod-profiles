@@ -1,0 +1,39 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# Short description of the purpose of this profile.
+comment = This is my first revision for the T60p Core Duo 2.33 w FireGL V5200.
+  Quiet Mode is only possible when the low power state is set on the GPU, to do this:
+  aticonfig --lsp to list powerstates
+  aticonfig --set-powerstate=1
+  100%% cooling kicks in for the GPU at 85 ^0 C., I've never had a crash below this temperature and the FireGL V5200 runs hot typically. (submitted by kellygp@gmail.com)
+# System manufacturer
+product_vendor = LENOVO
+# ThinkPad Model
+product_name = ThinkPad T60p
+# Machine type
+product_id = 20078DG
+
+[Options]
+# Set the hysteresis temperature difference.
+hysteresis = 4
+
+[Sensors]
+ibm_thermal_sensor_0 = {'name': 'Core Duo', 'triggers': {0: 0, 65: 4, 70: 5, 75: 6, 14: 0, 80: 7, 50: 2, 85: 8, 58: 3}}
+ibm_thermal_sensor_1 = {'name': 'Sensor 1', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_2 = {'name': 'Sensor 2', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_3 = {'name': 'FireGL5200', 'triggers': {0: 0, 65: 3, 75: 4, 78: 5, 80: 6, 82: 7, 85: 8, 55: 2}}
+ibm_thermal_sensor_4 = {'name': 'Sensor 4', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_5 = {'name': 'Sensor 5', 'triggers': {0: 255}}
+ibm_thermal_sensor_6 = {'name': 'Sensor 6', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_7 = {'name': 'Sensor 7', 'triggers': {0: 255}}
+ibm_thermal_sensor_8 = {'name': 'Sensor 8', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_9 = {'name': 'Sensor 9', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_10 = {'name': 'Sensor 10', 'triggers': {0: 0, 15: 0}}
+ibm_thermal_sensor_11 = {'name': 'Sensor 11', 'triggers': {0: 255}}
+ibm_thermal_sensor_12 = {'name': 'Sensor 12', 'triggers': {0: 255}}
+ibm_thermal_sensor_13 = {'name': 'Sensor 13', 'triggers': {0: 255}}
+ibm_thermal_sensor_14 = {'name': 'Sensor 14', 'triggers': {0: 255}}
+ibm_thermal_sensor_15 = {'name': 'Sensor 15', 'triggers': {0: 255}}
+

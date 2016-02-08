@@ -1,0 +1,35 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# Short description of the purpose of this profile.
+comment = ThinkPad X300
+# System manufacturer
+product_vendor = LENOVO
+# ThinkPad Model
+product_name = ThinkPad X300
+# Machine type
+product_id = 647814G
+
+[Options]
+# Set the hysteresis temperature difference.
+hysteresis = 2
+
+[Sensors]
+ibm_thermal_sensor_0 = {'name': 'CPU', 'triggers': {0: 0, 65: 3, 70: 255, 55: 2}}
+ibm_thermal_sensor_1 = {'name': 'Mini-PCI', 'triggers': {0: 0, 50: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_2 = {'name': 'HDD', 'triggers': {0: 0, 48: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_3 = {'name': 'Sensor 3', 'triggers': {0: 255}}
+ibm_thermal_sensor_4 = {'name': 'Batt1', 'triggers': {0: 0, 48: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_5 = {'name': 'Sensor 5', 'triggers': {0: 255}}
+ibm_thermal_sensor_6 = {'name': 'Batt2/DVD', 'triggers': {0: 0, 48: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_7 = {'name': 'Sensor 7', 'triggers': {0: 255}}
+ibm_thermal_sensor_8 = {'name': 'Sensor 8', 'triggers': {0: 0, 48: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_9 = {'name': 'Sensor 9', 'triggers': {0: 255}}
+ibm_thermal_sensor_10 = {'name': 'Sensor 10', 'triggers': {0: 0, 48: 2, 60: 255, 55: 3}}
+ibm_thermal_sensor_11 = {'name': 'Sensor 11', 'triggers': {0: 255}}
+ibm_thermal_sensor_12 = {'name': 'Sensor 12', 'triggers': {0: 255}}
+ibm_thermal_sensor_13 = {'name': 'Sensor 13', 'triggers': {0: 255}}
+ibm_thermal_sensor_14 = {'name': 'Sensor 14', 'triggers': {0: 255}}
+ibm_thermal_sensor_15 = {'name': 'Sensor 15', 'triggers': {0: 255}}
+

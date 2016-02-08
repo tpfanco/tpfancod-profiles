@@ -1,0 +1,35 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# Short description of the purpose of this profile.
+comment = Even though the computer is very normally I think it tends to get to hot, so now I have made a profile to force a bit cooler. (submitted by tjansson60@gmail.com)
+# System manufacturer
+product_vendor = IBM
+# ThinkPad Model
+product_name = ThinkPad ???
+# Machine type
+product_id = 26724XG
+
+[Options]
+# Set the hysteresis temperature difference.
+hysteresis = 2
+
+[Sensors]
+ibm_thermal_sensor_0 = {'name': 'CPU', 'triggers': {0: 0, 65: 8, 55: 1}}
+ibm_thermal_sensor_1 = {'name': 'PCI', 'triggers': {0: 0, 65: 8, 55: 1}}
+ibm_thermal_sensor_2 = {'name': 'HDD sensor', 'triggers': {0: 0, 65: 8, 55: 1}}
+ibm_thermal_sensor_3 = {'name': 'HDD intern', 'triggers': {0: 0, 40: 1, 50: 8}}
+ibm_thermal_sensor_4 = {'name': 'Battery 1', 'triggers': {0: 0, 20: 255}}
+ibm_thermal_sensor_5 = {'name': 'Sensor 5', 'triggers': {0: 255}}
+ibm_thermal_sensor_6 = {'name': 'Battery 2', 'triggers': {0: 0, 20: 255}}
+ibm_thermal_sensor_7 = {'name': 'Sensor 7', 'triggers': {0: 255}}
+ibm_thermal_sensor_8 = {'name': 'Sensor 8', 'triggers': {0: 255}}
+ibm_thermal_sensor_9 = {'name': 'Sensor 9', 'triggers': {0: 255}}
+ibm_thermal_sensor_10 = {'name': 'Sensor 10', 'triggers': {0: 255}}
+ibm_thermal_sensor_11 = {'name': 'Sensor 11', 'triggers': {0: 255}}
+ibm_thermal_sensor_12 = {'name': 'Sensor 12', 'triggers': {0: 255}}
+ibm_thermal_sensor_13 = {'name': 'Sensor 13', 'triggers': {0: 255}}
+ibm_thermal_sensor_14 = {'name': 'Sensor 14', 'triggers': {0: 255}}
+ibm_thermal_sensor_15 = {'name': 'Sensor 15', 'triggers': {0: 255}}
+

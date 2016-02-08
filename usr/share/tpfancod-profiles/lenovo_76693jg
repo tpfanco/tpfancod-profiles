@@ -1,0 +1,41 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# Short description of the purpose of this profile.
+comment = I found out that the iwl4965 adapter (Sensor 1 and Sensor 2) has a max temp of 53 so turning on fan control at 50 seems a bit close for comfort for me. I have now reset them to 48. But unless you use power saving on the WLAN interface then the fan will kick in and take quite a while before going off again. I use:
+
+  for i in `echo /sys/bus/pci/drivers/iwl4965/*/power_level`; do
+  echo 5 > $i
+  done
+
+  as root to turn the power saving on on the WLAN. (submitted by wm.wragg@yahoo.co.uk)
+# System manufacturer
+product_vendor = LENOVO
+# ThinkPad Model
+product_name = ThinkPad X61s
+# Machine type
+product_id = 76693JG
+
+[Options]
+# Set the hysteresis temperature difference.
+hysteresis = 2
+
+[Sensors]
+ibm_thermal_sensor_0 = {'name': 'Sensor 0', 'triggers': {0: 0, 51: 255, 46: 2}}
+ibm_thermal_sensor_1 = {'name': 'Sensor 1', 'triggers': {0: 0, 48: 255}}
+ibm_thermal_sensor_2 = {'name': 'Sensor 2', 'triggers': {0: 0, 48: 255}}
+ibm_thermal_sensor_3 = {'name': 'Sensor 3', 'triggers': {0: 0, 51: 255, 46: 2}}
+ibm_thermal_sensor_4 = {'name': 'Sensor 4', 'triggers': {0: 0, 38: 255}}
+ibm_thermal_sensor_5 = {'name': 'Sensor 5', 'triggers': {0: 255}}
+ibm_thermal_sensor_6 = {'name': 'Sensor 6', 'triggers': {0: 0, 36: 255}}
+ibm_thermal_sensor_7 = {'name': 'Sensor 7', 'triggers': {0: 255}}
+ibm_thermal_sensor_8 = {'name': 'Sensor 8', 'triggers': {0: 0, 50: 255, 45: 2}}
+ibm_thermal_sensor_9 = {'name': 'Sensor 9', 'triggers': {0: 0, 48: 255, 43: 2}}
+ibm_thermal_sensor_10 = {'name': 'Sensor 10', 'triggers': {0: 255}}
+ibm_thermal_sensor_11 = {'name': 'Sensor 11', 'triggers': {0: 255}}
+ibm_thermal_sensor_12 = {'name': 'Sensor 12', 'triggers': {0: 255}}
+ibm_thermal_sensor_13 = {'name': 'Sensor 13', 'triggers': {0: 255}}
+ibm_thermal_sensor_14 = {'name': 'Sensor 14', 'triggers': {0: 255}}
+ibm_thermal_sensor_15 = {'name': 'Sensor 15', 'triggers': {0: 255}}
+
