@@ -1,0 +1,22 @@
+# This file contains a fan profile for tpfancod
+
+
+[General]
+# short description of the purpose of this profile.
+comment =
+# system manufacturer
+product_vendor = LENOVO
+
+# thinkpad model
+product_name = ThinkPad X230
+
+# machine type
+product_id = 2324A15
+
+
+[Options]
+# set the hysteresis temperature difference.
+hysteresis = 2
+
+[Sensors]
+/sys/devices/virtual/hwmon/hwmon0/temp1_input = {'scaling': 0.001, 'name': 'CPU', 'triggers': {0: 0, 60: 255, 15: 2}}
